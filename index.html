@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Oliver White's personal website, portfolio, and contact hub."
+    />
+    <title>Oliver White | Personal Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="navbar" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="Oliver White home">
+          <span class="brand-mark">OW</span>
+          <span>Oliver White</span>
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#values">Values</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="nav-cta" href="mailto:ok@okwhite.com">Say Hi!</a>
+      </header>
+
+      <main id="top">
+        <section class="hero section-grid">
+          <div class="hero-content reveal">
+            <p class="eyebrow"><span class="tooltip tooltip-accent" data-tooltip="Yet a master of none, is better than a master of one.">Jack of All Trades, Master of None</span></p>
+            <h1>Hi, I'm Oliver White.</h1>
+            <p class="hero-lede">
+              I bridge technical excellence with creative vision, from network engineering 
+              to semiotics, driven design. I rise to leadership when needed and thrive 
+              in solving complex, multidisciplinary challenges.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#work">Explore my work</a>
+              <a class="button button-secondary" href="#contact">Get in touch</a>
+            </div>
+          </div>
+
+          <aside class="hero-card reveal" aria-label="Oliver White profile summary">
+            <div class="portrait">
+              <img src="https://i.nostr.build/fYtehAV6pMQ2hqG9.gif" alt="Oliver White" style="width: 100%; height: 100%; object-fit: cover; border-radius: 26px;" />
+            </div>
+            <div>
+              <p class="card-kicker">Currently</p>
+              <h2>Architecting solutions across technical and creative domains.</h2>
+            </div>
+            <div class="quick-stats">
+              <div>
+                <strong>Technical</strong>
+                <span>Network engineering & systems</span>
+              </div>
+              <div>
+                <strong>Creative</strong>
+                <span>Semiotics, UI/UX & visual media</span>
+              </div>
+              <div>
+                <strong>Leadership</strong>
+                <span>Strategic & adaptive</span>
+              </div>
+            </div>
+          </aside>
+        </section>
+
+        <section id="about" class="section section-grid">
+          <div class="section-heading reveal">
+            <p class="eyebrow">About</p>
+            <h2>Where technical depth meets creative insight.</h2>
+          </div>
+          <div class="section-copy reveal">
+            <p>
+              I'm a multidisciplinary professional who navigates seamlessly between 
+              technical infrastructure and creative expression. My background spans 
+              network engineering, high-level system architecture, and the <span class="tooltip" data-tooltip="The study of signs and symbols and their use or interpretation in communication.">semiotic 
+              principles</span> that underpin effective UI/UX and visual communication.
+            </p>
+            <p>
+              I understand that meaning is constructed through signs and symbols, whether 
+              in code, interfaces, or visual narratives. This unique perspective allows 
+              me to build solutions that are not only technically sound but also 
+              intuitively understood. When teams need direction, I step up to lead 
+              with clarity and purpose.
+            </p>
+          </div>
+        </section>
+
+        <section id="work" class="section">
+          <div class="section-header reveal">
+            <p class="eyebrow">Featured work</p>
+            <h2>Selected highlights</h2>
+          </div>
+          <div class="project-grid">
+            <article class="project-card reveal">
+              <span class="project-number">01</span>
+              <h3>Victorian Bitcoin Technology Club</h3>
+              <p>
+                Providing round-the-clock technical assistance to the <a href="https://vbtc.org.au" target="_blank" rel="noopener" style="color: var(--accent-strong); text-decoration: underline;">Victorian Bitcoin 
+                Technology Club</a>, supporting infrastructure, troubleshooting, and enabling 
+                the community to explore decentralized technologies.
+              </p>
+            </article>
+            <article class="project-card reveal">
+              <span class="project-number">02</span>
+              <h3>Hivetalk & Nostr Protocol</h3>
+              <p>
+                Continuing development on <a href="https://honey.hivetalk.org" target="_blank" rel="noopener" style="color: var(--accent-strong); text-decoration: underline;"><span class="tooltip" data-tooltip="A free Zoom/Meetup alternative for the privacy conscious.">hivetalk.org</span></a> 
+                and providing feedback on decentralized social media applications built 
+                on the <span class="tooltip" data-tooltip="Notes and Other Stuff Transmitted by Relays - a simple, open protocol for decentralized social media.">Nostr protocol</span>. 
+                Offering expert consulting at <a href="https://nostr.consulting" target="_blank" rel="noopener" style="color: var(--accent-strong); text-decoration: underline;">nostr.consulting</a> 
+                to help shape the future of open communication.
+              </p>
+            </article>
+            <article class="project-card reveal">
+              <span class="project-number">03</span>
+              <h3>Audio.Family Platform</h3>
+              <p>
+                Building <a href="https://audio.family" target="_blank" rel="noopener" style="color: var(--accent-strong); text-decoration: underline;">audio.family</a>, 
+                a creative audio platform that combines technical infrastructure with 
+                intuitive user experience and community-driven design.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="values" class="section values-panel reveal">
+          <div>
+            <p class="eyebrow">Values</p>
+            <h2>Principles that guide versatile excellence.</h2>
+          </div>
+          <div class="values-list">
+            <div>
+              <h3>Depth over specialization</h3>
+              <p>Proficiency across domains creates unique problem-solving perspectives that specialists might miss.</p>
+            </div>
+            <div>
+              <h3>Meaning through semiotics</h3>
+              <p>Every interface, system, and visual element communicates. Understanding how signs create meaning is fundamental.</p>
+            </div>
+            <div>
+              <h3>Lead when needed</h3>
+              <p>Leadership isn't about titles. It's about stepping up when teams need direction, clarity, and decisive action.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="section contact-section reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Let's build something exceptional together.</h2>
+          <p>
+            Whether you need technical infrastructure, creative direction, or someone 
+            who can bridge both worlds. I am always interested in challenging projects 
+            that demand multidisciplinary thinking.
+          </p>
+          <a class="button button-primary" href="mailto:ok@okwhite.com">
+            ok@okwhite.com
+          </a>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
