@@ -1,173 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Oliver White's personal website, portfolio, and contact hub."
-    />
-    <title>Oliver White | Personal Website</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="site-shell">
-      <header class="navbar" aria-label="Primary navigation">
-        <a class="brand" href="#top" aria-label="Oliver White home">
-          <span class="brand-mark">OW</span>
-          <span>Oliver White</span>
-        </a>
-        <nav class="nav-links" aria-label="Main navigation">
-          <a href="#about">About</a>
-          <a href="#work">Work</a>
-          <a href="#values">Values</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        <a class="nav-cta" href="mailto:ok@okwhite.com">Say Hi!</a>
-      </header>
-
-      <main id="top">
-        <section class="hero section-grid">
-          <div class="hero-content reveal">
-            <p class="eyebrow"><span class="tooltip tooltip-accent" data-tooltip="Yet a master of none, is better than a master of one.">Jack of All Trades, Master of None</span></p>
-            <h1>Hi, I'm Oliver White.</h1>
-            <p class="hero-lede">
-              I bridge technical excellence with creative vision, from network engineering 
-              to semiotics, driven design. I rise to leadership when needed and thrive 
-              in solving complex, multidisciplinary challenges.
-            </p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="#work">Explore my work</a>
-              <a class="button button-secondary" href="#contact">Get in touch</a>
-            </div>
-          </div>
-
-          <aside class="hero-card reveal" aria-label="Oliver White profile summary">
-            <div class="portrait">
-              <img src="https://i.nostr.build/fYtehAV6pMQ2hqG9.gif" alt="Oliver White" style="width: 100%; height: 100%; object-fit: cover; border-radius: 26px;" />
-            </div>
-            <div>
-              <p class="card-kicker">Currently</p>
-              <h2>Architecting solutions across technical and creative domains.</h2>
-            </div>
-            <div class="quick-stats">
-              <div>
-                <strong>Technical</strong>
-                <span>Network engineering & systems</span>
-              </div>
-              <div>
-                <strong>Creative</strong>
-                <span>Semiotics, UI/UX & visual media</span>
-              </div>
-              <div>
-                <strong>Leadership</strong>
-                <span>Strategic & adaptive</span>
-              </div>
-            </div>
-          </aside>
-        </section>
-
-        <section id="about" class="section section-grid">
-          <div class="section-heading reveal">
-            <p class="eyebrow">About</p>
-            <h2>Where technical depth meets creative insight.</h2>
-          </div>
-          <div class="section-copy reveal">
-            <p>
-              I'm a multidisciplinary professional who navigates seamlessly between 
-              technical infrastructure and creative expression. My background spans 
-              network engineering, high-level system architecture, and the <span class="tooltip" data-tooltip="The study of signs and symbols and their use or interpretation in communication.">semiotic 
-              principles</span> that underpin effective UI/UX and visual communication.
-            </p>
-            <p>
-              I understand that meaning is constructed through signs and symbols, whether 
-              in code, interfaces, or visual narratives. This unique perspective allows 
-              me to build solutions that are not only technically sound but also 
-              intuitively understood. When teams need direction, I step up to lead 
-              with clarity and purpose.
-            </p>
-          </div>
-        </section>
-
-        <section id="work" class="section">
-          <div class="section-header reveal">
-            <p class="eyebrow">Featured work</p>
-            <h2>Selected highlights</h2>
-          </div>
-          <div class="project-grid">
-            <article class="project-card reveal">
-              <span class="project-number">01</span>
-              <h3>Victorian Bitcoin Technology Club</h3>
-              <p>
-                Providing round-the-clock technical assistance to the <a href="https://vbtc.org.au" target="_blank" rel="noopener" style="color: var(--accent-strong); text-decoration: underline;">Victorian Bitcoin 
-                Technology Club</a>, supporting infrastructure, troubleshooting, and enabling 
-                the community to explore decentralized technologies.
-              </p>
-            </article>
-            <article class="project-card reveal">
-              <span class="project-number">02</span>
-              <h3>Hivetalk & Nostr Protocol</h3>
-              <p>
-                Continuing development on <a href="https://honey.hivetalk.org" target="_blank" rel="noopener" style="color: var(--accent-strong); text-decoration: underline;"><span class="tooltip" data-tooltip="A free Zoom/Meetup alternative for the privacy conscious.">hivetalk.org</span></a> 
-                and providing feedback on decentralized social media applications built 
-                on the <span class="tooltip" data-tooltip="Notes and Other Stuff Transmitted by Relays - a simple, open protocol for decentralized social media.">Nostr protocol</span>. 
-                Offering expert consulting at <a href="https://nostr.consulting" target="_blank" rel="noopener" style="color: var(--accent-strong); text-decoration: underline;">nostr.consulting</a> 
-                to help shape the future of open communication.
-              </p>
-            </article>
-            <article class="project-card reveal">
-              <span class="project-number">03</span>
-              <h3>Audio.Family Platform</h3>
-              <p>
-                Building <a href="https://audio.family" target="_blank" rel="noopener" style="color: var(--accent-strong); text-decoration: underline;">audio.family</a>, 
-                a creative audio platform that combines technical infrastructure with 
-                intuitive user experience and community-driven design.
-              </p>
-            </article>
-          </div>
-        </section>
-
-        <section id="values" class="section values-panel reveal">
-          <div>
-            <p class="eyebrow">Values</p>
-            <h2>Principles that guide versatile excellence.</h2>
-          </div>
-          <div class="values-list">
-            <div>
-              <h3>Depth over specialization</h3>
-              <p>Proficiency across domains creates unique problem-solving perspectives that specialists might miss.</p>
-            </div>
-            <div>
-              <h3>Meaning through semiotics</h3>
-              <p>Every interface, system, and visual element communicates. Understanding how signs create meaning is fundamental.</p>
-            </div>
-            <div>
-              <h3>Lead when needed</h3>
-              <p>Leadership isn't about titles. It's about stepping up when teams need direction, clarity, and decisive action.</p>
-            </div>
-          </div>
-        </section>
-
-        <section id="contact" class="section contact-section reveal">
-          <p class="eyebrow">Contact</p>
-          <h2>Let's build something exceptional together.</h2>
-          <p>
-            Whether you need technical infrastructure, creative direction, or someone 
-            who can bridge both worlds. I am always interested in challenging projects 
-            that demand multidisciplinary thinking.
-          </p>
-          <a class="button button-primary" href="mailto:ok@okwhite.com">
-            ok@okwhite.com
-          </a>
-        </section>
-      </main>
-    </div>
-    <script src="script.js"></script>
-  </body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>obango</title>
+<style>
+  html,body { margin:0; height:100%; background:#050208; }
+  body { display:flex; flex-direction:column; align-items:center; justify-content:center;
+         overflow:hidden; }
+  pre { font: min(2.7vw, 24px)/1.05 "JetBrains Mono","Fira Code","Cascadia Code", Menlo, Consolas, monospace;
+        white-space:pre; margin:0; animation: pulse 4s ease-in-out infinite;
+        filter: drop-shadow(0 0 12px rgba(120,0,255,.35)); }
+  pre i { font-style:normal; text-shadow: 0 0 9px currentColor; }
+  .tag { margin-top:4vh; font: 13px/1 "JetBrains Mono", Menlo, Consolas, monospace;
+         color:#5c5470; letter-spacing:.35em; }
+  .tag b { color:#8fffef; animation: blink 1.1s steps(1) infinite; font-weight:normal; }
+  .scan { position:fixed; inset:0; pointer-events:none;
+          background:
+            radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,.55) 100%),
+            repeating-linear-gradient(0deg, rgba(0,0,0,0) 0 2px, rgba(0,0,0,.22) 2px 4px); }
+  @keyframes pulse { 0%,100% { filter: drop-shadow(0 0 10px rgba(120,0,255,.30)); }
+                      50% { filter: drop-shadow(0 0 22px rgba(0,240,255,.45)); } }
+  @keyframes blink { 50% { opacity:0; } }
+  @media (prefers-reduced-motion: reduce) { pre, .tag b { animation:none; } }
+</style>
+</head>
+<body>
+<pre aria-label="obango"> <i style="color:rgb(3,252,240)">█</i><i style="color:rgb(6,248,241)">█</i><i style="color:rgb(8,245,241)">█</i><i style="color:rgb(11,242,241)">█</i><i style="color:rgb(14,238,241)">█</i><i style="color:rgb(17,235,242)">█</i><i style="color:rgb(20,232,242)">╗</i> <i style="color:rgb(25,225,243)">█</i><i style="color:rgb(28,222,243)">█</i><i style="color:rgb(31,219,243)">█</i><i style="color:rgb(34,215,243)">█</i><i style="color:rgb(37,212,244)">█</i><i style="color:rgb(40,209,244)">█</i><i style="color:rgb(42,205,244)">╗</i>  <i style="color:rgb(51,196,245)">█</i><i style="color:rgb(54,192,245)">█</i><i style="color:rgb(57,189,246)">█</i><i style="color:rgb(59,186,246)">█</i><i style="color:rgb(62,182,246)">█</i><i style="color:rgb(65,179,247)">╗</i> <i style="color:rgb(71,172,247)">█</i><i style="color:rgb(74,169,247)">█</i><i style="color:rgb(76,166,248)">█</i><i style="color:rgb(79,163,248)">╗</i>   <i style="color:rgb(91,149,249)">█</i><i style="color:rgb(93,146,249)">█</i><i style="color:rgb(96,143,250)">╗</i> <i style="color:rgb(102,136,250)">█</i><i style="color:rgb(105,133,250)">█</i><i style="color:rgb(108,130,251)">█</i><i style="color:rgb(110,126,251)">█</i><i style="color:rgb(113,123,251)">█</i><i style="color:rgb(116,120,252)">█</i><i style="color:rgb(119,116,252)">╗</i>  <i style="color:rgb(127,106,253)">█</i><i style="color:rgb(130,103,253)">█</i><i style="color:rgb(133,100,253)">█</i><i style="color:rgb(136,97,254)">█</i><i style="color:rgb(139,93,254)">█</i><i style="color:rgb(142,90,254)">█</i><i style="color:rgb(144,87,254)">╗</i>
+<i style="color:rgb(25,226,242)">█</i><i style="color:rgb(28,223,243)">█</i><i style="color:rgb(31,219,243)">╔</i><i style="color:rgb(33,216,243)">═</i><i style="color:rgb(36,213,244)">═</i><i style="color:rgb(39,209,244)">═</i><i style="color:rgb(42,206,244)">█</i><i style="color:rgb(45,203,244)">█</i><i style="color:rgb(48,199,245)">╗</i><i style="color:rgb(50,196,245)">█</i><i style="color:rgb(53,193,245)">█</i><i style="color:rgb(56,190,246)">╔</i><i style="color:rgb(59,186,246)">═</i><i style="color:rgb(62,183,246)">═</i><i style="color:rgb(65,180,246)">█</i><i style="color:rgb(67,176,247)">█</i><i style="color:rgb(70,173,247)">╗</i><i style="color:rgb(73,170,247)">█</i><i style="color:rgb(76,166,248)">█</i><i style="color:rgb(79,163,248)">╔</i><i style="color:rgb(82,160,248)">═</i><i style="color:rgb(84,156,248)">═</i><i style="color:rgb(87,153,249)">█</i><i style="color:rgb(90,150,249)">█</i><i style="color:rgb(93,147,249)">╗</i><i style="color:rgb(96,143,250)">█</i><i style="color:rgb(99,140,250)">█</i><i style="color:rgb(101,137,250)">█</i><i style="color:rgb(104,133,250)">█</i><i style="color:rgb(107,130,251)">╗</i>  <i style="color:rgb(116,120,252)">█</i><i style="color:rgb(118,117,252)">█</i><i style="color:rgb(121,114,252)">║</i><i style="color:rgb(124,110,252)">█</i><i style="color:rgb(127,107,253)">█</i><i style="color:rgb(130,104,253)">╔</i><i style="color:rgb(133,100,253)">═</i><i style="color:rgb(135,97,254)">═</i><i style="color:rgb(138,94,254)">═</i><i style="color:rgb(141,90,254)">═</i><i style="color:rgb(144,87,254)">╝</i> <i style="color:rgb(150,81,255)">█</i><i style="color:rgb(152,79,254)">█</i><i style="color:rgb(154,77,253)">╔</i><i style="color:rgb(156,76,252)">═</i><i style="color:rgb(158,74,251)">═</i><i style="color:rgb(160,73,250)">═</i><i style="color:rgb(162,71,249)">█</i><i style="color:rgb(164,70,248)">█</i><i style="color:rgb(166,68,247)">╗</i>
+<i style="color:rgb(50,197,245)">█</i><i style="color:rgb(53,193,245)">█</i><i style="color:rgb(56,190,246)">║</i>   <i style="color:rgb(67,177,247)">█</i><i style="color:rgb(70,174,247)">█</i><i style="color:rgb(73,170,247)">║</i><i style="color:rgb(75,167,248)">█</i><i style="color:rgb(78,164,248)">█</i><i style="color:rgb(81,160,248)">█</i><i style="color:rgb(84,157,248)">█</i><i style="color:rgb(87,154,249)">█</i><i style="color:rgb(90,150,249)">█</i><i style="color:rgb(92,147,249)">╔</i><i style="color:rgb(95,144,250)">╝</i><i style="color:rgb(98,141,250)">█</i><i style="color:rgb(101,137,250)">█</i><i style="color:rgb(104,134,250)">█</i><i style="color:rgb(107,131,251)">█</i><i style="color:rgb(109,127,251)">█</i><i style="color:rgb(112,124,251)">█</i><i style="color:rgb(115,121,252)">█</i><i style="color:rgb(118,117,252)">║</i><i style="color:rgb(121,114,252)">█</i><i style="color:rgb(124,111,252)">█</i><i style="color:rgb(126,108,253)">╔</i><i style="color:rgb(129,104,253)">█</i><i style="color:rgb(132,101,253)">█</i><i style="color:rgb(135,98,253)">╗</i> <i style="color:rgb(141,91,254)">█</i><i style="color:rgb(143,88,254)">█</i><i style="color:rgb(146,84,255)">║</i><i style="color:rgb(149,81,255)">█</i><i style="color:rgb(151,79,254)">█</i><i style="color:rgb(153,77,253)">║</i>  <i style="color:rgb(159,73,250)">█</i><i style="color:rgb(161,71,249)">█</i><i style="color:rgb(163,70,248)">█</i><i style="color:rgb(165,68,247)">╗</i><i style="color:rgb(167,67,246)">█</i><i style="color:rgb(169,65,245)">█</i><i style="color:rgb(171,64,244)">║</i>   <i style="color:rgb(179,58,240)">█</i><i style="color:rgb(181,56,239)">█</i><i style="color:rgb(183,55,238)">║</i>
+<i style="color:rgb(75,168,248)">█</i><i style="color:rgb(78,164,248)">█</i><i style="color:rgb(81,161,248)">║</i>   <i style="color:rgb(92,148,249)">█</i><i style="color:rgb(95,144,249)">█</i><i style="color:rgb(98,141,250)">║</i><i style="color:rgb(100,138,250)">█</i><i style="color:rgb(103,134,250)">█</i><i style="color:rgb(106,131,251)">╔</i><i style="color:rgb(109,128,251)">═</i><i style="color:rgb(112,125,251)">═</i><i style="color:rgb(115,121,251)">█</i><i style="color:rgb(117,118,252)">█</i><i style="color:rgb(120,115,252)">╗</i><i style="color:rgb(123,111,252)">█</i><i style="color:rgb(126,108,253)">█</i><i style="color:rgb(129,105,253)">╔</i><i style="color:rgb(132,101,253)">═</i><i style="color:rgb(134,98,253)">═</i><i style="color:rgb(137,95,254)">█</i><i style="color:rgb(140,92,254)">█</i><i style="color:rgb(143,88,254)">║</i><i style="color:rgb(146,85,255)">█</i><i style="color:rgb(149,82,255)">█</i><i style="color:rgb(151,79,254)">║</i><i style="color:rgb(153,78,253)">╚</i><i style="color:rgb(155,76,252)">█</i><i style="color:rgb(157,75,251)">█</i><i style="color:rgb(159,73,250)">╗</i><i style="color:rgb(161,72,249)">█</i><i style="color:rgb(163,70,248)">█</i><i style="color:rgb(165,69,247)">║</i><i style="color:rgb(167,67,246)">█</i><i style="color:rgb(169,66,245)">█</i><i style="color:rgb(171,64,244)">║</i>   <i style="color:rgb(179,58,240)">█</i><i style="color:rgb(181,57,239)">█</i><i style="color:rgb(183,55,238)">║</i><i style="color:rgb(185,54,237)">█</i><i style="color:rgb(187,52,236)">█</i><i style="color:rgb(189,51,235)">║</i>   <i style="color:rgb(197,45,231)">█</i><i style="color:rgb(199,43,230)">█</i><i style="color:rgb(201,42,229)">║</i>
+<i style="color:rgb(100,138,250)">╚</i><i style="color:rgb(103,135,250)">█</i><i style="color:rgb(106,132,251)">█</i><i style="color:rgb(108,128,251)">█</i><i style="color:rgb(111,125,251)">█</i><i style="color:rgb(114,122,251)">█</i><i style="color:rgb(117,119,252)">█</i><i style="color:rgb(120,115,252)">╔</i><i style="color:rgb(123,112,252)">╝</i><i style="color:rgb(125,109,253)">█</i><i style="color:rgb(128,105,253)">█</i><i style="color:rgb(131,102,253)">█</i><i style="color:rgb(134,99,253)">█</i><i style="color:rgb(137,95,254)">█</i><i style="color:rgb(140,92,254)">█</i><i style="color:rgb(142,89,254)">╔</i><i style="color:rgb(145,86,255)">╝</i><i style="color:rgb(148,82,255)">█</i><i style="color:rgb(151,79,255)">█</i><i style="color:rgb(153,78,254)">║</i>  <i style="color:rgb(159,73,251)">█</i><i style="color:rgb(161,72,249)">█</i><i style="color:rgb(163,70,248)">║</i><i style="color:rgb(165,69,247)">█</i><i style="color:rgb(167,67,246)">█</i><i style="color:rgb(168,66,245)">║</i> <i style="color:rgb(172,63,243)">╚</i><i style="color:rgb(174,61,242)">█</i><i style="color:rgb(176,60,241)">█</i><i style="color:rgb(178,58,240)">█</i><i style="color:rgb(180,57,239)">█</i><i style="color:rgb(182,55,238)">║</i><i style="color:rgb(184,54,237)">╚</i><i style="color:rgb(186,52,236)">█</i><i style="color:rgb(188,51,235)">█</i><i style="color:rgb(190,49,234)">█</i><i style="color:rgb(192,48,233)">█</i><i style="color:rgb(194,46,232)">█</i><i style="color:rgb(196,45,231)">█</i><i style="color:rgb(198,43,230)">╔</i><i style="color:rgb(200,42,229)">╝</i><i style="color:rgb(202,40,228)">╚</i><i style="color:rgb(204,39,227)">█</i><i style="color:rgb(206,37,226)">█</i><i style="color:rgb(208,36,225)">█</i><i style="color:rgb(210,34,224)">█</i><i style="color:rgb(212,33,222)">█</i><i style="color:rgb(214,31,221)">█</i><i style="color:rgb(216,30,220)">╔</i><i style="color:rgb(218,28,219)">╝</i>
+ <i style="color:rgb(128,106,253)">╚</i><i style="color:rgb(131,103,253)">═</i><i style="color:rgb(133,99,253)">═</i><i style="color:rgb(136,96,254)">═</i><i style="color:rgb(139,93,254)">═</i><i style="color:rgb(142,89,254)">═</i><i style="color:rgb(145,86,254)">╝</i> <i style="color:rgb(150,80,255)">╚</i><i style="color:rgb(152,78,254)">═</i><i style="color:rgb(154,77,253)">═</i><i style="color:rgb(156,75,252)">═</i><i style="color:rgb(158,74,251)">═</i><i style="color:rgb(160,72,250)">═</i><i style="color:rgb(162,71,249)">╝</i> <i style="color:rgb(166,68,247)">╚</i><i style="color:rgb(168,66,245)">═</i><i style="color:rgb(170,65,244)">╝</i>  <i style="color:rgb(176,60,241)">╚</i><i style="color:rgb(178,59,240)">═</i><i style="color:rgb(180,57,239)">╝</i><i style="color:rgb(182,56,238)">╚</i><i style="color:rgb(184,54,237)">═</i><i style="color:rgb(186,53,236)">╝</i>  <i style="color:rgb(192,48,233)">╚</i><i style="color:rgb(194,47,232)">═</i><i style="color:rgb(196,45,231)">═</i><i style="color:rgb(198,44,230)">═</i><i style="color:rgb(200,42,229)">╝</i> <i style="color:rgb(204,39,227)">╚</i><i style="color:rgb(206,37,226)">═</i><i style="color:rgb(208,36,225)">═</i><i style="color:rgb(210,34,224)">═</i><i style="color:rgb(212,33,223)">═</i><i style="color:rgb(214,31,222)">═</i><i style="color:rgb(216,30,221)">╝</i>  <i style="color:rgb(222,25,217)">╚</i><i style="color:rgb(224,24,216)">═</i><i style="color:rgb(226,22,215)">═</i><i style="color:rgb(228,21,214)">═</i><i style="color:rgb(230,19,213)">═</i><i style="color:rgb(232,18,212)">═</i><i style="color:rgb(234,16,211)">╝</i></pre>
+<div class="tag">obango.org<b>&#9608;</b></div>
+<div class="scan"></div>
+</body>
 </html>
