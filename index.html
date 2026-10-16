@@ -12,7 +12,7 @@
   .wrap { position:relative; }
   .monitor { position:relative; background: linear-gradient(180deg,#3d4144 0%,#2a2d30 55%,#1b1d1f 100%);
             padding: 1.1em 1.4em .8em; border-radius: 1em 1em 1.5em 1.5em;
-            box-shadow: inset 0 .12em 0 rgba(255,255,255,.12), inset 0 -.4em .8em rgba(0,0,0,.3),
+            box-shadow: inset 0 .12em 0 rgba(255,255,255,.12), inset 0 .34em 0 -.26em rgba(190,200,212,.22), inset 0 -.4em .8em rgba(0,0,0,.3),
                         inset .3em 0 .5em -.3em rgba(255,255,255,.08), inset -.3em 0 .5em -.3em rgba(0,0,0,.15),
                         0 1.5em 4em rgba(0,0,0,.65), 0 0 6em rgba(0,255,120,.07); }
   .screen { position:relative; overflow:hidden; background:#031008;
@@ -21,10 +21,15 @@
                         0 0 2.2em rgba(0,255,120,.30), 0 0 7em rgba(0,255,120,.15); }
   .screen::after { content:""; position:absolute; inset:0; pointer-events:none;
             background: linear-gradient(128deg, rgba(215,255,230,.10) 0%, rgba(215,255,230,.03) 18%, transparent 34%); }
-  .plate { display:flex; align-items:center; gap:1.1em; padding:.85em .35em .15em;
+  .plate { display:flex; align-items:center; gap:1.2em; padding:.85em .5em .15em;
             font: 10px/1 "JetBrains Mono", Menlo, Consolas, monospace;
             color:#7e858c; letter-spacing:.28em; }
-  .plate .brand { color:#9aa2ab; font-weight:700; }
+  .plate .brand { color:#c6cbd3; font-weight:700; letter-spacing:.5em; font-size:12px; }
+  .plate .tri { font-family: Georgia, "Times New Roman", serif; font-style:italic;
+            color:#b7bdc6; letter-spacing:.14em; font-size:11px; }
+  .knob { width:13px; height:13px; border-radius:50%; flex:none;
+            background: radial-gradient(circle at 35% 30%, #5c6168, #202327 62%);
+            box-shadow: inset 0 1px 1px rgba(255,255,255,.3), 0 1px 2px #000; }
   .vents { flex:1; height:5px; border-radius:3px; opacity:.65;
             background: repeating-linear-gradient(90deg, #14161a 0 4px, transparent 4px 9px); }
   .led { width:7px; height:7px; border-radius:50%; background:#39e75f; flex:none;
@@ -42,7 +47,9 @@
   .scan { position:absolute; inset:0; pointer-events:none;
           background:
             radial-gradient(ellipse at center, rgba(0,255,120,.06) 0%, transparent 55%, rgba(0,0,0,.55) 100%),
-            repeating-linear-gradient(0deg, rgba(0,0,0,0) 0 2px, rgba(0,0,0,.22) 2px 4px); }
+            repeating-linear-gradient(0deg, rgba(0,0,0,0) 0 2px, rgba(0,0,0,.22) 2px 4px),
+            linear-gradient(180deg, transparent calc(25% - 1px), rgba(0,0,0,.38) 25%, rgba(255,255,255,.05) calc(25% + 1px), transparent calc(25% + 2px)),
+            linear-gradient(180deg, transparent calc(75% - 1px), rgba(0,0,0,.38) 75%, rgba(255,255,255,.05) calc(75% + 1px), transparent calc(75% + 2px)); }
   .rain { position:fixed; inset:0; z-index:0; overflow:hidden; pointer-events:none;
           -webkit-mask-image: radial-gradient(ellipse 62% 58% at center, transparent 26%, #000 72%);
           mask-image: radial-gradient(ellipse 62% 58% at center, transparent 26%, #000 72%); }
@@ -76,7 +83,7 @@
 </style>
 </head>
 <body>
-<!-- v6 graphite tv -->
+<!-- v7 trinitron -->
 <div class="rain" aria-hidden="true"><span class="col" style="left:0.5%;font-size:13px;animation-duration:17.7s;animation-delay:-1.0s;opacity:0.71;color:#17d97e">O
 X
 イ
@@ -4771,7 +4778,7 @@ O
     <div class="tag">obango.org<b>&#9608;</b></div>
     <div class="scan"></div>
   </div>
-  <div class="plate"><span class="brand">OBANGO</span><span class="vents"></span><span>MODEL 86&nbsp;&nbsp;MONOCHROME</span><span class="led"></span></div>
+  <div class="plate"><span class="brand">SONY</span><span class="tri">Trinitron</span><span class="vents"></span><span class="knob"></span><span class="knob"></span><span class="led"></span></div>
 </div>
 </body>
 </html>
