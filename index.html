@@ -20,6 +20,20 @@
         box-shadow: 0 0 1.6em rgba(0,255,120,.30), 0 0 6em rgba(0,255,120,.14); }
   .tv .screen::after { content:""; position:absolute; inset:0; pointer-events:none;
         background: linear-gradient(128deg, rgba(215,255,230,.10) 0%, rgba(215,255,230,.03) 18%, transparent 34%); }
+  .static { position:absolute; inset:0; z-index:0; pointer-events:none;
+          background:#041008 url(noise.png); background-size:38% auto; opacity:.9;
+          animation: staticj .5s steps(1) infinite; }
+  .nosignal { position:absolute; left:0; right:0; top:50%; transform:translateY(-50%);
+          text-align:center; z-index:0; font:700 1.05em "JetBrains Mono", Menlo, Consolas, monospace;
+          letter-spacing:.35em; color:rgba(235,255,240,.82); text-shadow:0 0 8px rgba(140,255,180,.5);
+          animation: sigblink 2.4s steps(1) infinite; }
+  @keyframes staticj {
+    0% { background-position: 0 0; } 12% { background-position: -41px 23px; }
+    25% { background-position: 57px -31px; } 37% { background-position: -13px -47px; }
+    50% { background-position: 33px 39px; } 62% { background-position: -59px 7px; }
+    75% { background-position: 21px -19px; } 87% { background-position: -29px 51px; }
+    100% { background-position: 0 0; } }
+  @keyframes sigblink { 0%,100% { opacity:.85; } 92% { opacity:.85; } 93% { opacity:.25; } 94% { opacity:.85; } }
   .wrap { position:relative; }
   pre { font-family:"JetBrains Mono","Fira Code","Cascadia Code", Menlo, Consolas, monospace;
         font-size:1em; line-height:1.05; white-space:pre; margin:0;
@@ -28,7 +42,7 @@
   .beam { position:absolute; left:-4%; right:-4%; height:18%; top:-20%;
           background: linear-gradient(180deg, transparent, rgba(140,255,170,.16) 45%, rgba(200,255,220,.30) 50%, rgba(140,255,170,.16) 55%, transparent);
           mix-blend-mode: screen; pointer-events:none; animation: sweep 5s ease-in-out infinite; }
-  .tag { margin-top:1.2em; font-size:0.56em; line-height:1;
+  .tag { position:relative; margin-top:1.2em; font-size:0.56em; line-height:1;
           font-family:"JetBrains Mono", Menlo, Consolas, monospace;
           color:#1f6e46; letter-spacing:.35em; animation: tagflick 6s linear infinite; }
   .tag b { color:#58ff9b; animation: blink 1.1s steps(1) infinite; font-weight:normal; }
@@ -50,13 +64,15 @@
               filter: drop-shadow(2px 0 rgba(255,60,90,.5)) drop-shadow(-2px 0 rgba(60,220,255,.5)); }
     97%     { transform:none; filter: drop-shadow(0 0 12px rgba(0,255,120,.35)); }
   }
-  @media (prefers-reduced-motion: reduce) { pre, .beam, .tag, .tag b { animation:none; } }
+  @media (prefers-reduced-motion: reduce) { pre, .beam, .tag, .tag b, .static, .nosignal { animation:none; } }
 </style>
 </head>
 <body>
-<!-- v12 no scan overlay -->
+<!-- v13 no-signal static -->
 <div class="tv">
   <div class="screen">
+    <div class="static"></div>
+    <div class="nosignal">NO SIGNAL</div>
     <div class="wrap">
 <pre aria-label="obango"> <i style="color:rgb(165,255,140)">█</i><i style="color:rgb(162,255,139)">█</i><i style="color:rgb(158,255,139)">█</i><i style="color:rgb(155,255,138)">█</i><i style="color:rgb(152,255,138)">█</i><i style="color:rgb(149,255,138)">█</i><i style="color:rgb(146,255,137)">╗</i> <i style="color:rgb(139,255,137)">█</i><i style="color:rgb(136,255,136)">█</i><i style="color:rgb(133,255,136)">█</i><i style="color:rgb(130,255,135)">█</i><i style="color:rgb(127,255,135)">█</i><i style="color:rgb(124,255,135)">█</i><i style="color:rgb(120,255,134)">╗</i>  <i style="color:rgb(111,255,133)">█</i><i style="color:rgb(108,255,133)">█</i><i style="color:rgb(105,255,132)">█</i><i style="color:rgb(101,255,132)">█</i><i style="color:rgb(98,255,132)">█</i><i style="color:rgb(95,255,131)">╗</i> <i style="color:rgb(89,255,131)">█</i><i style="color:rgb(86,255,130)">█</i><i style="color:rgb(82,255,130)">█</i><i style="color:rgb(79,255,129)">╗</i>   <i style="color:rgb(67,255,128)">█</i><i style="color:rgb(63,255,128)">█</i><i style="color:rgb(60,255,127)">╗</i> <i style="color:rgb(54,255,126)">█</i><i style="color:rgb(51,255,126)">█</i><i style="color:rgb(48,255,126)">█</i><i style="color:rgb(44,255,125)">█</i><i style="color:rgb(41,255,125)">█</i><i style="color:rgb(38,255,125)">█</i><i style="color:rgb(35,255,124)">╗</i>  <i style="color:rgb(25,255,123)">█</i><i style="color:rgb(22,255,123)">█</i><i style="color:rgb(19,255,122)">█</i><i style="color:rgb(16,255,122)">█</i><i style="color:rgb(13,255,122)">█</i><i style="color:rgb(10,255,121)">█</i><i style="color:rgb(6,255,121)">╗</i>
 <i style="color:rgb(140,255,137)">█</i><i style="color:rgb(137,255,136)">█</i><i style="color:rgb(134,255,136)">╔</i><i style="color:rgb(130,255,136)">═</i><i style="color:rgb(127,255,135)">═</i><i style="color:rgb(124,255,135)">═</i><i style="color:rgb(121,255,134)">█</i><i style="color:rgb(118,255,134)">█</i><i style="color:rgb(115,255,134)">╗</i><i style="color:rgb(111,255,133)">█</i><i style="color:rgb(108,255,133)">█</i><i style="color:rgb(105,255,133)">╔</i><i style="color:rgb(102,255,132)">═</i><i style="color:rgb(99,255,132)">═</i><i style="color:rgb(96,255,131)">█</i><i style="color:rgb(92,255,131)">█</i><i style="color:rgb(89,255,131)">╗</i><i style="color:rgb(86,255,130)">█</i><i style="color:rgb(83,255,130)">█</i><i style="color:rgb(80,255,129)">╔</i><i style="color:rgb(77,255,129)">═</i><i style="color:rgb(73,255,129)">═</i><i style="color:rgb(70,255,128)">█</i><i style="color:rgb(67,255,128)">█</i><i style="color:rgb(64,255,128)">╗</i><i style="color:rgb(61,255,127)">█</i><i style="color:rgb(58,255,127)">█</i><i style="color:rgb(54,255,126)">█</i><i style="color:rgb(51,255,126)">█</i><i style="color:rgb(48,255,126)">╗</i>  <i style="color:rgb(39,255,125)">█</i><i style="color:rgb(35,255,124)">█</i><i style="color:rgb(32,255,124)">║</i><i style="color:rgb(29,255,123)">█</i><i style="color:rgb(26,255,123)">█</i><i style="color:rgb(23,255,123)">╔</i><i style="color:rgb(20,255,122)">═</i><i style="color:rgb(16,255,122)">═</i><i style="color:rgb(13,255,122)">═</i><i style="color:rgb(10,255,121)">═</i><i style="color:rgb(7,255,121)">╝</i> <i style="color:rgb(1,255,120)">█</i><i style="color:rgb(0,254,119)">█</i><i style="color:rgb(0,252,118)">╔</i><i style="color:rgb(0,251,117)">═</i><i style="color:rgb(0,249,116)">═</i><i style="color:rgb(0,248,115)">═</i><i style="color:rgb(0,246,114)">█</i><i style="color:rgb(0,245,113)">█</i><i style="color:rgb(0,243,112)">╗</i>
